@@ -92,7 +92,7 @@ jobs:
 
       - name: 开启SSH通道
         if: env.SSH_ACTIONS == 'true' || contains(github.event.action, 'ssh')
-        uses: P3TERX/debugger-action@main
+        uses: P3TERX/ssh2actions@main
 
       - name: 下载依赖
         run: |
